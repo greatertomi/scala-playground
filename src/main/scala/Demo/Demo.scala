@@ -1,14 +1,13 @@
 package Demo
 
-import Rational.Rational
+import Element.ArrayElement
 
 object Demo {
   def main(args: Array[String]): Unit = {
-    val oneHalf = new Rational(1, 2)
-    val twoThirds = new Rational(2, 3)
-    val twoFifth = new Rational(2, 5)
-    println(oneHalf + 6)
-    println((oneHalf * twoThirds) + twoFifth)
+    val arrayElem = new ArrayElement(Array("hello", "world"))
+    val newArr = Array(1, 2, 4) ++ Array(5, 8, 9)
+//    println(arrayElem.width)
+    println(newArr.mkString("Array(", ", ", ")"))
   }
 }
 
